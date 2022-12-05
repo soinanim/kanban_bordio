@@ -6,9 +6,7 @@ export const StyledTools = styled.div`
 `;
 
 export const StyledH3 = styled.h3`
-  margin-top: 25px;
-  margin-left: 16px;
-  margin-bottom: 37px;
+  margin: 25px 16px 37px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -21,7 +19,6 @@ export const StyledUl = styled.ul`
 `;
 
 export const StyledLi = styled.li`
-  list-style-type: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -29,6 +26,7 @@ export const StyledLi = styled.li`
   padding-bottom: 10px;
   color: ${baseTheme.colors.primaryText};
   font: ${baseTheme.font.primary};
+  list-style-type: none;
 
   &:not(:first-child) {
     padding: 11px 0 11px 10px;

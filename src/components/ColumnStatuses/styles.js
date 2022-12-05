@@ -3,7 +3,6 @@ import { baseTheme } from '../../styles/theme';
 
 export const StyledNewStatus = styled.div`
   padding-top: 26px;
-  width: 377px;
 `;
 
 export const StyledImg = styled.img`
@@ -18,9 +17,7 @@ export const StyledSpan = styled.span`
 export const StyledHeader = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 36px;
-  padding-top: 3px;
-  padding-bottom: 12px;
+  padding: 3px 36px 12px;
 `;
 
 export const StyledHorizontalDiv = styled.div`

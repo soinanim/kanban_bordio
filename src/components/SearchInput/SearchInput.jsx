@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledSearchInput, StyledInput, StyledSearchButton } from './styles';
+import { StyledSearch, StyledInput, StyledButton } from './styles';
 
 export default function SearchInput({
   darkMode,
@@ -9,16 +9,16 @@ export default function SearchInput({
   maxWidthInput,
 }) {
   return (
-    <StyledSearchInput darkMode={darkMode} width={width} padding={padding}>
+    <StyledSearch darkMode={darkMode} width={width} padding={padding}>
       <StyledInput
         type='search'
         placeholder='Search...'
         disabled
         maxWidthInput={maxWidthInput}
       />
-      <StyledSearchButton>
+      <StyledButton>
         <img src='../icons/search.svg' alt='search' />
-      </StyledSearchButton>
-    </StyledSearchInput>
+      </StyledButton>
+    </StyledSearch>
   );
 }

@@ -8,6 +8,6 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   color: #fff;
   background-color: ${baseTheme.colors.primary};
-  padding: 8px 20px;
+  padding: 8px 20px 8px 21px;
   font: ${baseTheme.font.primary};
 `;

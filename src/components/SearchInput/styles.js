@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 import { baseTheme } from '../../styles/theme';
 
-export const StyledSearchInput = styled.div`
+export const StyledSearch = styled.div`
   display: flex;
-  padding: ${(props) => props.padding};
   width: ${(props) => props.width};
-
+  padding: ${(props) => props.padding};
   margin: ${(props) => props.darkMode && '0 16px'};
   border-radius: ${(props) => (props.darkMode ? '4px' : '50px')};
   background-color: ${(props) =>
@@ -14,14 +13,14 @@ export const StyledSearchInput = styled.div`
 `;
 
 export const StyledInput = styled.input`
+  max-width: ${(props) => props.maxWidthInput};
+  padding: 5px 8px;
   border: none;
   color: ${baseTheme.colors.secondaryText};
   background-color: transparent;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  max-width: ${(props) => props.maxWidthInput};
-  padding: 5px 8px;
 
   &:focus {
     border: none;
@@ -36,11 +35,11 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledSearchButton = styled.button`
-  border: none;
-  background-color: transparent;
+export const StyledButton = styled.button`
   display: flex;
   align-items: center;
+  border: none;
+  background-color: transparent;
 
   img {
     width: 16px;

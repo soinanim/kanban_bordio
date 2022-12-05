@@ -4,7 +4,7 @@ import Main from './Layouts/Main/Main';
 import SideBar from './Layouts/SideBar/SideBar';
 import Tools from './Layouts/Tools/Tools';
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <SideBar />
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

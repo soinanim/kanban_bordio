@@ -1,12 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { baseTheme } from '../../styles/theme';
-
-const fontStyles = css`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-`;
 
 export const StyledLi = styled.li`
   list-style-type: none;
@@ -27,8 +21,7 @@ export const StyledLi = styled.li`
   &.workspace {
     flex-direction: row;
     align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 16px;
     width: 100%;
     margin-bottom: 13px;
   }

@@ -8,7 +8,7 @@ export const StyledTaskCard = styled.div`
   background-color: #d8dcff;
   padding: 16px 10px 17px 15px;
   border-radius: 8px;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => (props.completed ? '#F0F0F0' : props.color)};
   color: ${(props) => (props.completed ? '#A5A5A5' : '#222222')};
 `;
 

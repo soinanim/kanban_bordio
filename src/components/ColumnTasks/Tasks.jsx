@@ -5,13 +5,12 @@ import Task from '../Task';
 
 import { StyledTasks, StyledHorizontalLine, StyledTask } from './styles';
 
-export default function Tasks({ column, index }) {
-  console.log(index);
+export default function Tasks({ column, index, length }) {
   const IS_FIRST_COLUMN = index === 0;
-  const IS_LAST_COLUMN = index === 3;
+  const IS_PENULTIMATE_COLUMN = index === length - 1;
 
   return (
-    <StyledTasks isLastColumn={IS_LAST_COLUMN}>
+    <StyledTasks isPenultColumn={IS_PENULTIMATE_COLUMN}>
       <HeaderTasks
         isFirstColumn={IS_FIRST_COLUMN}
         columnName={column.columnName}

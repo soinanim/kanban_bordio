@@ -7,19 +7,19 @@ import ColumnStatuses from '../../components/ColumnStatuses';
 import { StyledWorkSpace } from './styles';
 
 export default function WorkSpace() {
-  const [tasks, setTasks] = useState([]);
+  const [columns, setColumns] = useState([]);
 
-  const getTasks = () =>
-    TaskService.getTasks().then((res) => setTasks(res.data));
+  const getColumns = () =>
+    TaskService.getColumns().then((res) => setColumns(res.data));
 
   useEffect(() => {
-    getTasks();
+    getColumns();
   }, []);
 
   return (
     <StyledWorkSpace>
-      {tasks.map((col, index) => (
-        <ColumnTasks column={col} index={index} />
+      {columns.map((col, index) => (
+        <ColumnTasks column={col} index={index} length={columns.length} />
       ))}
       <ColumnStatuses />
     </StyledWorkSpace>

@@ -8,6 +8,8 @@ import UserAvatar from '../../components/UserAvatar';
 
 import { StyledHeader, StyledWrapper } from './styles';
 
+const NOTIFICATIONS_QUIANTITY_DEFAULT = 99;
+
 export default function Header() {
   return (
     <StyledHeader>
@@ -17,19 +19,20 @@ export default function Header() {
           text={'Add new'}
         />
         <Select
-          name={'view'}
-          options={[{ value: 'kanban', label: 'Kanban' }]}
+          selectedOption={'Kanban'}
+          options={[
+            { value: 'board_view', label: 'Board view' },
+            { value: 'table_view', label: 'Table view' },
+            { value: 'kanban', label: 'Kanban' },
+          ]}
         />
-        <Select
-          name={'filter'}
-          options={[{ value: 'filter', label: 'Filter' }]}
-        />
+        <Select options={[{ value: 'filter', label: 'Filter' }]} />
       </StyledWrapper>
       <StyledWrapper right>
         <SearchInput width={'180px'} padding={'8px'} maxWidthInput={'85%'} />
         <Notifications
           img={<img src='../icons/bell.svg' alt='notifications' />}
-          quantity={'99+'}
+          quantity={`${NOTIFICATIONS_QUIANTITY_DEFAULT}+`}
         />
         <UserAvatar />
       </StyledWrapper>
