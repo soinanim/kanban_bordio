@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/kanban_bordio/static/css/main.d0526a03.css",
-    "main.js": "/kanban_bordio/static/js/main.a83444c1.js",
+    "main.js": "/kanban_bordio/static/js/main.09cdd0a9.js",
+    "static/media/avatar@2x.png": "/kanban_bordio/static/media/avatar@2x.4e9107527fb23e831441.png",
+    "static/media/bordio-logo.svg": "/kanban_bordio/static/media/bordio-logo.28d35dc94480f8f47b391862af07d1f7.svg",
+    "static/media/tasks.svg": "/kanban_bordio/static/media/tasks.d73456850bdbcae6468904b73111c51a.svg",
+    "static/media/schedule.svg": "/kanban_bordio/static/media/schedule.a84255723a35fa421ea04a78b882a75b.svg",
+    "static/media/notes.svg": "/kanban_bordio/static/media/notes.3125a9e93b27ff56ddbe038556bdd09f.svg",
+    "static/media/roadmap.svg": "/kanban_bordio/static/media/roadmap.f40637fd943a7af0292ae0b8e69556ea.svg",
+    "static/media/search.svg": "/kanban_bordio/static/media/search.b56dcf9bd6480852759112f55816725c.svg",
+    "static/media/files.svg": "/kanban_bordio/static/media/files.81743221521174dbedcc3c633cd72dcd.svg",
+    "static/media/bell.svg": "/kanban_bordio/static/media/bell.410b1281ae5b8274815a89d6045b08ad.svg",
+    "static/media/plus.svg": "/kanban_bordio/static/media/plus.5f275c386cf5493dd0ee165d1d11bb18.svg",
+    "static/media/arrows-gray.svg": "/kanban_bordio/static/media/arrows-gray.33ca923746b95d5019fefe42e61b0665.svg",
+    "static/media/arrows-white.svg": "/kanban_bordio/static/media/arrows-white.dadece1914bc3d7c580b121dbe76dadc.svg",
+    "static/media/arrow-up.svg": "/kanban_bordio/static/media/arrow-up.25cde47f62afb1471bbc6e966c32cc64.svg",
     "index.html": "/kanban_bordio/index.html",
+    "static/media/plus-gray.svg": "/kanban_bordio/static/media/plus-gray.670d409b7720754f0d8c1917d121601e.svg",
     "main.d0526a03.css.map": "/kanban_bordio/static/css/main.d0526a03.css.map",
-    "main.a83444c1.js.map": "/kanban_bordio/static/js/main.a83444c1.js.map"
+    "main.09cdd0a9.js.map": "/kanban_bordio/static/js/main.09cdd0a9.js.map"
   },
   "entrypoints": [
     "static/css/main.d0526a03.css",
-    "static/js/main.a83444c1.js"
+    "static/js/main.09cdd0a9.js"
   ]
 }
