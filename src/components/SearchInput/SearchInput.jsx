@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { StyledSearch, StyledInput, StyledButton } from './styles';
+import search from '../../icons/search.svg';
 
 export default function SearchInput({
   darkMode,
@@ -17,7 +18,7 @@ export default function SearchInput({
         maxWidthInput={maxWidthInput}
       />
       <StyledButton>
-        <img src='../icons/search.svg' alt='search' />
+        <img src={search} alt='search' />
       </StyledButton>
     </StyledSearch>
   );

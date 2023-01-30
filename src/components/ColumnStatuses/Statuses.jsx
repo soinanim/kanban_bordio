@@ -6,12 +6,13 @@ import {
   StyledHeader,
   StyledHorizontalDiv,
 } from './styles.js';
+import plus_gray from '../../icons/plus-gray.svg';
 
 export default function Statuses() {
   return (
     <StyledNewStatus>
       <StyledHeader>
-        <StyledImg src='../icons/plus-gray.svg' alt='add status' />
+        <StyledImg src={plus_gray} alt='add status' />
         <StyledSpan>Create status</StyledSpan>
       </StyledHeader>
 

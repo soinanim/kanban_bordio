@@ -2,13 +2,8 @@ import React from 'react';
 
 import { StyledTools, StyledH3, StyledUl, StyledLi, StyledImg } from './styles';
 
-const LI_ITEMS = [
-  { title: 'Roadmap' },
-  { title: 'Schedule', status: 'active' },
-  { title: 'Tasks' },
-  { title: 'Notes' },
-  { title: 'Files' },
-];
+import { images } from './util';
+import { LI_ITEMS } from './util';
 
 export default function Tools() {
   return (
@@ -17,7 +12,7 @@ export default function Tools() {
       <StyledUl>
         {LI_ITEMS.map((item) => (
           <StyledLi className={`${item.status}`}>
-            <StyledImg src={`../icons/${item.title}.svg`} alt={item.title} />
+            <StyledImg src={images[item.title]} alt={item.title} />
             {item.title}
           </StyledLi>
         ))}

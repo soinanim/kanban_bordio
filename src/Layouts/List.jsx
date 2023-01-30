@@ -3,6 +3,8 @@ import React from 'react';
 import UserAvatar from '../components/UserAvatar';
 import ListElement from '../components/ListElement';
 
+import arrows_white from '../icons/arrows-white.svg';
+
 export default function List() {
   return (
     <ul>
@@ -12,12 +14,12 @@ export default function List() {
         spanText='My workspace'
       />
       <ListElement
-        img={<img src='../icons/arrows-white.svg' alt='' />}
+        img={<img src={arrows_white} alt='' />}
         spanText='Favorites'
         subLiArray={['Marketing', 'Mobile App']}
       />
       <ListElement
-        img={<img src='../icons/arrows-white.svg' alt='' />}
+        img={<img src={arrows_white} alt='' />}
         spanText='My Projects'
         subLiArray={[
           'Marketing',

@@ -6,6 +6,9 @@ import SearchInput from '../../components/SearchInput';
 import Select from '../../components/Select';
 import UserAvatar from '../../components/UserAvatar';
 
+import plus from '../../icons/plus.svg';
+import bell from '../../icons/bell.svg';
+
 import { StyledHeader, StyledWrapper } from './styles';
 
 const NOTIFICATIONS_QUIANTITY_DEFAULT = 99;
@@ -14,10 +17,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <StyledWrapper>
-        <Button
-          img={<img src='../icons/plus.svg' alt='add new' />}
-          text={'Add new'}
-        />
+        <Button img={<img src={plus} alt='add new' />} text={'Add new'} />
         <Select
           selectedOption={'Kanban'}
           options={[
@@ -31,7 +31,7 @@ export default function Header() {
       <StyledWrapper right>
         <SearchInput width={'180px'} padding={'8px'} maxWidthInput={'85%'} />
         <Notifications
-          img={<img src='../icons/bell.svg' alt='notifications' />}
+          img={<img src={bell} alt='notifications' />}
           quantity={`${NOTIFICATIONS_QUIANTITY_DEFAULT}+`}
         />
         <UserAvatar />

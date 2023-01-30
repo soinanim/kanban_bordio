@@ -8,6 +8,9 @@ import {
   StyledLabel,
 } from './styles';
 
+import arrow_up from '../../icons/arrow-up.svg';
+import arrows_gray from '../../icons/arrows-gray.svg';
+
 export default function Select({ options, selectedOption }) {
   const [isActive, setIsActive] = useState(false);
   const [title, setTitle] = useState(selectedOption || options[0].label);
@@ -23,12 +26,7 @@ export default function Select({ options, selectedOption }) {
     <StyledSelect active={isActive} onClick={handleActive}>
       <StyledTitle>
         <span>{title}</span>
-        <img
-          src={`${
-            isActive ? '../icons/arrow-up.svg' : '../icons/arrows-gray.svg'
-          }`}
-          alt='select arrow'
-        />
+        <img src={`${isActive ? arrow_up : arrows_gray}`} alt='select arrow' />
       </StyledTitle>
       <StyledContent active={isActive}>
         {options.map((option) => (
