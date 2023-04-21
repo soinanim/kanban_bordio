@@ -1,6 +1,6 @@
 # Bordio app
 
-This is a Bordio application layout. 
+Bordio app interface 
 
 # Getting Started with Create React App
 
